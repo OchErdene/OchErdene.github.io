@@ -174,7 +174,7 @@ body {
 
 .sun {
     position: absolute;
-    top: auto;
+    top: 0;
     right: 300px;
     width: 100px; 
     height: 100px; 
