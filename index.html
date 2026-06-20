@@ -21,20 +21,19 @@
             <div class="stars"></div>
 
             <div class = "sun">
+                <div class="orbit"></div>
                 <div class = "ellipse"></div>
                 <div class = "bigellipse"></div>
             </div>
 
             <!-- main content -->
 
-            <div class = "bar">
-                <h2 style="position: absolute; left: 20px; top: 0px;">Och-Erdene Khurelsukh /</h2>
-            </div>
+            
             
             <main class="content" id = "Home">
 
                 <p class="cs">
-                    CS · UBC
+                    CS · UBC Vancouver
                 </p>
 
                 <h1 style="font-size: 50px;">
@@ -42,8 +41,8 @@
                     but the code works.
                 </h1>
 
-                <p style="color: rgb(118, 189, 255); font-size: 17px;">
-                    CS student at UBC Vancouver. I like creating, watching and learning.
+                <p style="color: rgb(118, 189, 255); font-size: 17px; width: 500px;">
+                    2nd year CS student. Into game dev, AI/ML & cybersecurity.Open to internships and anything worth learning.
                 </p>
 
                 <a href="#Projects">
@@ -58,33 +57,58 @@
         <!--Projects-->
         <div id="Projects" style="
             padding: 10px 50px;
-            color: rgb(146, 146, 146);">
+            color: rgb(146, 146, 146);
+            border-top: 0.5px solid rgba(255, 255, 255, 0.1);">
             <h4>PROJECTS</h4>
             <div class="projects-grid">
                 <a class="project" href="https://github.com/OchErdene/Story-builder">
-                    <h4>Story-Builder</h4>
+                    <h4>
+                        Story-Builder
+                        <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 12px;padding-left: 200px; color: rgb(77, 77, 77);"></i>
+                    </h4>
                     <p>
-                        A course project from CPSC 210. An interactive story builder that lets you write and branch your own narratives.
+                        An interactive story builder letting you write and branch your own narratives. Course project from CPSC 210.
                     </p>
                     <div class="skills">
                         <p>Java</p>
                         <p>JSON</p>
                     </div>
                     <div class="disclaimer">
-                        Disclaimer: Due to course restrictions this project is in private repository. It is available on request.
+                        Private repo - available on request
                     </div>
                 </a>
                 <a class="project" href="https://github.com/OchErdene/simd-lib">
-                    <h4>SIMD-lib</h4>
+                    <h4>
+                        SIMD-lib 
+                        <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 12px;padding-left: 250px; color: rgb(77, 77, 77);"></i>
+                    </h4>
                     <p>
-                        An Assembly math library for C, featuring SIMD (AVX2) optimized array operations like addition multiplication etc.  
+                        An Assembly math library for C, featuring SIMD (AVX2) optimized array operations - addition, multiplication, dot product, and more.  
                     </p>
                     <div class="skills">
                         <p>Assembly</p>
-                        <p>C</p>
+                        <p> C </p>
                     </div>
-                    <div class="disclaimer">
+                    <div class="disclaimer" style="color: rgb(118, 189, 255);">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
                         1.98x faster than scalar - benchmarked on AVX2
+                    </div>
+                </a>
+                <a class="project" href="https://github.com/OchErdene/neural-network">
+                    <h4>
+                        Neural-network
+                        <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 12px;padding-left: 200px; color: rgb(77, 77, 77);"></i>
+                    </h4>
+                    <p>
+                        Simple feedforward neural network that takes two numbers (0 or 1) as input and outputs confidence score for whether the XOR result is 0 or 1.
+                    </p>
+                    <div class="skills">
+                        <p> C </p>
+                        <p> GCC </p>
+                        <p> NASM </p>
+                    </div>
+                    <div class="disclaimer" style="color: rgb(118, 189, 255);">
+                        Using SIMD-lib project as a submodule the neural network implementation is ~8x faster than scalar implementation. 
                     </div>
                 </a>
                 <!--
@@ -120,11 +144,11 @@
                     OK
             </div>
             <div class="description">
-                <h3>About Me</h3>
+                <h3>Och-Erdene</h3>
                 <p> 
-                    I'm Och-Erdene, originally from Mongolia, currently a 1st year CS student at UBC Vancouver. 
-                    I haven't settled on a specialty yet, but I'm drawn to game dev, AI/ML, and cybersecurity. 
-                    Open to internships and any opportunity to learn.
+                    Originally from Mongolia, 1st year CS at UBC Vancouver. 
+                    Not settled on a specialty yet - drawn to AI/ML, and cybersecurity. 
+                    Always open to internships and anything worth learning.
                 </p>
 
                 <div class="skills">
