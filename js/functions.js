@@ -10,7 +10,7 @@ function toggleSidebar() {
 function generateStars(count) {
     let stars = '';
     for (let i = 0; i < count; i++) {
-        const x = Math.floor(Math.random() * 2000);
+        const x = Math.floor(Math.random() * 1920);
         const y = Math.floor(Math.random() * 600);
         stars += `${x}px ${y}px #fff,`;
     }

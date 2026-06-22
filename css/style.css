@@ -172,50 +172,6 @@ body {
     animation: twinkle 5s ease-in-out infinite alternate;
 }
 
-.sun {
-    position: absolute;
-    top: 0;
-    right: 300px;
-    width: 100px; 
-    height: 100px; 
-    border-radius:50%; 
-    background: rgb(255, 255, 255);
-}
-
-.orbit {
-    position: absolute;
-    border-radius: 50%;
-    background: #65b2ff;
-    width: 30px;
-    height: 30px;
-    right: 70px;
-    top: 130px;
-}
-
-.ellipse {
-    position: absolute;
-    border: 1px solid #b3b3b362;
-    border-radius: 50%;
-    top: -200px;
-    left: -100px;
-    rotate: 80deg;
-    width: 200px; 
-    height: 500px; 
-    pointer-events: none;
-}
-
-.bigellipse {
-    position: absolute;
-    border: 1px solid #b3b3b380;
-    border-radius: 50%;
-    top: -400px;
-    left: -300px;
-    rotate: 80deg;
-    width: 400px; 
-    height: 1000px; 
-    pointer-events: none;
-}
-
 @keyframes twinkle {
     from { opacity: 1;}
     to { opacity: 0.3; }
@@ -308,4 +264,65 @@ body {
     text-decoration: none;
     color: rgb(0, 0, 0);
     background: white;
+}
+
+@media (min-width: 900px) {
+    .sun {
+        position: absolute;
+        top: 0;
+        right: 300px;
+        width: 100px; 
+        height: 100px; 
+        border-radius:50%; 
+        background: rgb(255, 255, 255);
+    }
+
+    .orbit {
+        position: absolute;
+        border-radius: 50%;
+        background: #65b2ff;
+        width: 30px;
+        height: 30px;
+        right: 70px;
+        top: 130px;
+    }
+
+    .ellipse {
+        position: absolute;
+        border: 1px solid #b3b3b362;
+        border-radius: 50%;
+        top: -200px;
+        left: -100px;
+        rotate: 80deg;
+        width: 200px; 
+        height: 500px; 
+        pointer-events: none;
+    }
+
+    .bigellipse {
+        position: absolute;
+        border: 1px solid #b3b3b380;
+        border-radius: 50%;
+        top: -400px;
+        left: -300px;
+        rotate: 80deg;
+        width: 400px; 
+        height: 1000px; 
+        pointer-events: none;
+    }
+}
+
+.stat {
+    width: 100%; 
+    height: 600px;
+}
+
+@media (max-width: 395px) {
+    .additional {
+        display: none;
+    }
+
+    .content a{
+        display: none;
+    }
 }
