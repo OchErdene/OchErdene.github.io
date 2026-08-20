@@ -1,44 +1,132 @@
 body {
     background-color: #090030;
     color: white;
+    font-family: 'Aboreto'; 
+    font-size: 22px; 
 }
 
 .start {
     margin: 50px;
     text-align: center;
-    height: 100vh;
+    height:75vh;
 }
 
 .header {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     margin: 0px;
-    border: 1px solid white;
+}
+
+.header h3 {
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.header p {
+    margin: 0px;
+    font-family: 'Alef', sans-serif;
+    font-size: 13px;
+    background-image: linear-gradient(45deg, #ff007f, #7f00ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent;
 }
 
 .cover {
-    border: 1px solid white;
+    margin-top: 184px;
+    margin-bottom: 50px;
+}
+
+.name {
+    font-size: 90px;
+    margin: 0px;
+}
+
+.school {
+    font-size: 24px;
+    margin: 0px;
+    background-image: linear-gradient( #fdfdfd, #b1b1b1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent;
 }
 
 .menu {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.menu div h1 {
-    text-align: center;
-    margin: 0px;
-    padding: 10px;
+    position: relative;
+    width: 600px;
+    height: 260px;
+    margin: 40px auto 0;
 }
 
 .menu div {
-    margin: 10px;
-    border: 1px solid white;
-    border-radius: 10px;
-    height: 190px;
-    width: 190px;
+    position: absolute;
+    top: 20px;
 }
 
-.menu div:hover {
-    height: 200px;
-    width: 200px;
+.menu div a {
+    display: flex;
+    padding-left: 180px;
+    padding-top: 20px;
+    align-items: flex-end;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 16px;
+    height: 220px;
+    width: 220px;
+    writing-mode: vertical-rl;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
+
+.ABOUT {
+    left: 0px;
+    z-index: 1;
+}
+.ABOUT a {
+    background: #0C003A;
+    transform: rotate(180deg); /* combine text flip + tilt */
+}
+ /*
+ Rotation of the texts and elements used to navigate 
+*/
+.PROJECTS {
+    left: 130px;
+    z-index: 2;
+}
+.PROJECTS a {
+    background: #0A0060;
+    transform: rotate(180deg) rotate(-10deg);
+}
+
+.TOOLS {
+    left: 260px;
+    z-index: 3;
+}
+.TOOLS a {
+    background: #160079;
+    transform: rotate(180deg) rotate(5deg);
+}
+
+.CONTACTS {
+    left: 390px;
+    z-index: 4;
+}
+.CONTACTS a {
+    background: #220089;
+    transform: rotate(180deg) rotate(10deg);
+}
+
+.menu div a:hover {
+    transform: rotate(180deg) translateY(15px) scale(1.03);
+    z-index: 10;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
