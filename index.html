@@ -15,7 +15,7 @@
 
     <body>
         <div class = "logo">
-            <a href="#home"> <img src = "favicon.svg" alt = "logo"></a>
+            <a href = "#home"> <img src = "favicon.svg" alt = "logo"></a>
         </div>
         <div class = "color">
         </div>
@@ -25,21 +25,21 @@
                 <p>ocherdenekhurelsukh@gmail.com</p>
             </div>
             <div class = "cover">
-                <p class="name">OCH-ERDENE</p>
+                <p class = "name">OCH-ERDENE</p>
                 <p class = "school">UBC COMPUTER SCIENCE</p>
             </div>
             <div class = "menu">
                 <div class = "ABOUT">
-                    <a href="#about">ABOUT</a>
+                    <a href = "#about">ABOUT</a>
                 </div>
                 <div class = "PROJECTS">
-                    <a href="#projects">PROJECTS</a>
+                    <a href = "#projects">PROJECTS</a>
                 </div>
                 <div class = "TOOLS">
-                    <a href="#tools">TOOLS</a>
+                    <a href = "#tools">TOOLS</a>
                 </div>
                 <div class = "CONTACTS">
-                    <a href="#contacts">CONTACTS</a>
+                    <a href = "#contacts">CONTACTS</a>
                 </div>
             </div>
         </div>
@@ -51,8 +51,8 @@
             <div class = "subabout">
                 <div class = "picture">
                 </div>
-                <p> <span class="unimportant"> Originally from </span> Mongolia.<br> 
-                        2nd year CS @ UBC Vancouver, <span class="unimportant"><br>
+                <p> <span class = "unimportant"> Originally from </span> Mongolia.<br> 
+                        2nd year CS @ UBC Vancouver, <span class = "unimportant"><br>
                         Not settled on a specialty yet</span> - <br>
                         drawn to AI/ML and System Engineering</p>
             </div>
@@ -60,9 +60,9 @@
                 <p>Focused on optimizing <br> 
                     and writing reusable <br> codes.</p>
                 <div class = "hobbies">
-                    <p><span class="unimportant">I also love</span></p>
-                    <div class="hobby-pill">
-                        <span id="hobby-text">VOLLEYBALL</span>
+                    <p><span class = "unimportant">I also love</span></p>
+                    <div class = "hobby-pill">
+                        <span id = "hobby-text">VOLLEYBALL</span>
                     </div>
                 </div>
             </div>
@@ -70,33 +70,30 @@
         <h1 id = "projects">PROJECTS</h1>
         <hr>
         <div class = "projects1">
-            <div class = "project">
+            <a class = "project" href = "https://github.com/OchErdene/simd-lib">
                 <h2>SIMD Library</h2>
                 <p>- Arithmetic and array functions in NASM assembly. <br>
                    - Implemented AVX2 SIMD optimization achieving 1.98x speedup. <br>
                    -  Benchmarked scalar vs SIMD implementations over 100 million iterations.<br>
                    Tools used: NASM, C, Git, Makefile, Assembly, GCC, WSL
                 </p>
-                <a href="https://github.com/OchErdene/simd-lib">GitHub</a>
-            </div>
-            <div class = "project">
+            </a>
+            <a class = "project" href = "https://github.com/OchErdene/neural-network">
                 <h2>XOR Neural Network</h2>
                 <p> - Built a feedforward neural network in C.<br>
                     - Implemented dot product in both scalar and SIMD achieving 8x speedup on the forward pass.<br>
                     - Demonstrates low-level ML inference without frameworks, directly managing memory and CPU vector registers.<br>
                    Tools used: C, Git, Makefile, GCC, WSL
                 </p>
-                <a href="https://github.com/OchErdene/neural-network">GitHub</a>
-            </div>
-            <div class = "project">
+            </a>
+            <a class = "project" href = "https://github.com/OchErdene/Story-builder">
                 <h2>Story Builder</h2>
                 <p> - Designed and implemented a dual-interface story builder (console + GUI). <br>
-                    - Built branching with total of 6 ending choices. <br>
+                    - Built branching with total of 6 endings and 10 choices in example story. <br>
                     - Implemented engine with save/load functionality using JSON.<br>
-                   Tools used: Java, JSON, Git, Git
+                   Tools used: Java, JSON, Git
                 </p>
-                <a href="https://github.com/OchErdene/Story-builder">GitHub</a>
-            </div>
+            </a>
         </div>
         <h1 id = "tools">TOOLS</h1>
         <hr>
@@ -118,6 +115,6 @@
             <div class = "linkedin"></div>
             <div class = "mail"></div>
         </div>
-        <p>© 2026, Och-Erdene Khurelsukh</p>
+        <p class="unimportant">© 2026, Och-Erdene Khurelsukh</p>
     </body>
 </html>

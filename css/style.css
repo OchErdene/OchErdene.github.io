@@ -20,10 +20,11 @@ h1 {
 hr {
     border: 1px solid rgba(255, 255, 255, 0.411);
     margin: 0 auto;
-    border-radius: 50%s;
+    border-radius: 50%;
 }
 
 .logo {
+    z-index: 10;
     height: 35px;
     width: 35px;
     border-radius: 50%;
@@ -36,9 +37,11 @@ hr {
 .logo:hover {
     height: 40px;
     width: 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0);
 }
 
 .color {
+    z-index: 10;
     border: 1px solid white;
     height: 35px;
     width: 35px;
@@ -46,12 +49,13 @@ hr {
     position: fixed;
     bottom: 50px;
     right: 10px;
-    transition: height 0.3s ease, width 0.3s ease;
+    transition: height 0.3s ease, width 0.3s ease, box-shadow 0.1s ease;
 }
 
 .color:hover {
     height: 40px;
     width: 40px;
+    box-shadow: 0 4px 12px rgb(45, 66, 255);
 }
 
 .start {
@@ -236,7 +240,6 @@ hr {
 }
 
 .hobbies {
-    position: flex;
     width: 40%;
     margin: 0 auto;
     text-align: center; 
@@ -257,14 +260,45 @@ hr {
     overflow: hidden;
 }
 
-.hobby-viewport {
-    position: relative;
-    height: 1.4rem;
-    overflow: hidden;
-}
-
 @media (max-width: 1000px) {
     .hobbies {
         width: 80%;
     }
+}
+
+/*Projects*/
+
+.projects1 {
+    height: 30vh;
+}
+
+.project {
+    position: absolute;
+    border: 1px solid #0E004C;
+    background-color: #0E004C;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 25px;
+    height: fit-content;
+    text-align: center;
+    transition: border 0.3s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+    color: white;
+    width: 90%;
+    left: 50%;
+    transform: translate(-52%);
+}
+
+.project:hover {
+    border: 1px solid rgb(45, 9, 207);
+    box-shadow: 0 8px 20px rgba(161, 161, 161, 0.4);
+}
+
+
+.project p {
+    text-align: left;
+    font-family: 'Alef', sans-serif;
+    margin: 20px;
 }
