@@ -293,7 +293,7 @@ hr {
 
 .project:hover {
     border: 1px solid rgb(45, 9, 207);
-    box-shadow: 0 8px 20px rgba(161, 161, 161, 0.4);
+    box-shadow: 0 8px 20px rgb(0, 162, 255);
 }
 
 
@@ -301,4 +301,112 @@ hr {
     text-align: left;
     font-family: 'Alef', sans-serif;
     margin: 20px;
+}
+
+/*Tools*/
+.tools1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tools1 div div{
+    margin: 20px;
+}
+
+.languages {
+    text-align: center;
+}
+
+.language {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    align-items: center;
+    width: 240px;
+}
+
+.cpp {
+    background-image: url('../images/Cpp.png');
+    background-size: cover;
+    width: 40px;
+    height: 45px;
+}
+
+.csharp {
+    background-image: url('../images/CSharp.png');
+    background-size: cover;
+    width: 40px;
+    height: 45px;
+}
+
+.c {
+    background-image: url('../images/C.png');
+    background-size: cover;
+    width: 40px;
+    height: 45px;
+}
+
+.java {
+    background-image: url('../images/Java.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.html {
+    background-image: url('../images/HTML.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.css {
+    background-image: url('../images/CSS.png');
+    background-size: cover;
+    width: 28px;
+    height: 40px;
+}
+
+.assembly {
+    background-image: url('../images/Assembly.png');
+    background-size: cover;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/*Contact*/
+
+.contacts1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.github {
+    background-image: url('../images/Github.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.linkedin {
+    background-image: url('../images/LinkedIn.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.mail {
+    background-image: url('../images/Gmail.png');
+    background-size: cover;
+    width: 54px;
+    height: 40px;
+}
+
+.copyright {
+    color: #ffffff7c;
+    font-size: small;
+    text-align: center;
 }
