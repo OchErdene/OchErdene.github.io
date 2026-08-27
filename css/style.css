@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Space+Grotesk:wght@300;400;500&display=swap');
+
 body {
-    background-color: #090030;
+    background-image: radial-gradient(ellipse at top, #14113a 0%, #0A0918 55%);
     color: white;
     font-family: 'Aboreto'; 
     font-size: 22px; 
+    
 }
 
 html {
@@ -81,9 +84,9 @@ hr {
 
 .header p {
     margin: 0px;
-    font-family: 'Alef', sans-serif;
+    font-family: 'Cormorant Goromond';
     font-size: 13px;
-    background-image: linear-gradient(45deg, #ff007f, #7f00ff);
+    background-image: linear-gradient(45deg, #fafafa, #888888);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent; 
@@ -139,11 +142,11 @@ hr {
     transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
-.ABOUT {
+.ABOUTS {
     left: 0px;
     z-index: 1;
 }
-.ABOUT a {
+.ABOUTS a {
     background: #0C003A;
     transform: rotate(180deg);
 }
@@ -185,43 +188,37 @@ hr {
 
 /* About Me section */
 
+.descriptions em {
+    background-image: linear-gradient( #3e80be, #0d72e6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent;
+}
+
+.descriptions {
+    font-family:'Cormorant Garamond';
+    font-weight:400;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+}
+
 .about-title {
     margin-left: 50px;
 }
 
-/*TODO Figure this width out*/
-.about1 {
-    position: relative;
-    margin: 50px;
-    width: 50%;
-    justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
+.about {
+    margin: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+
 }
 
-.about1 p {
-    position: relative;
-    font-size: 25px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    left: 60px;
-    width: 50%;
-}
-
-.subabout {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-
-.subabout p{
-    width: 48%;
-    left: 0px;
-}
-
-.unimportant {
-    color: #ffffff7c;
+.about h3 {
+    font-size: 28px;
+    font-weight: 400;
 }
 
 .picture {
@@ -229,41 +226,46 @@ hr {
     width: 300px;
     border-radius: 50%;
     border: 1px solid #480BFF;
+    box-shadow: 0 0px 100px #2a2474;
     margin-left: 6%;
     background-image: url('../PFP.png');
     background-size: cover;
 }
 
-.hobby {
+.row {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 16px;
+    border-bottom: rgba(255, 255, 255, 0.253) 1px solid;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.row .q {
+    color: #ffffff7c;
+    text-align: left;
+}
+
+.row .a {
+    text-align: right;
+}
+
+.hobby {
+    font-size: 16px;
+    margin-top: 30px;
+    color: #ffffff7c;
 }
 
 .hobbies {
-    width: 40%;
-    margin: 0 auto;
-    text-align: center; 
-    justify-content: center;
+    display:inline-block; 
+    font-style:italic;
+    color: white;
+    transition: opacity .3s ease, transform .3s ease;
 }
 
-.hobbies p {
-    text-align: center;
-    font-family: 'Alef', sans-serif;
-}
-
-.hobby-pill {
-    display: inline-block;
-    padding: 12px 40px;
-    border-radius: 50px;
-    background-color: #480BFF       ;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-    overflow: hidden;
-}
-
-@media (max-width: 1000px) {
-    .hobbies {
-        width: 80%;
-    }
+.hobbies.swap {
+    opacity: 0;
+    transform: translateY(6px);
 }
 
 /*Projects*/
@@ -315,6 +317,18 @@ hr {
 
 .languages {
     text-align: center;
+    width: 285px;
+}
+
+.design {
+    width: 285px;
+    text-align: center;
+}
+
+.development {
+    width: 285px;
+    align-items: center;
+    text-align: center;
 }
 
 .language {
@@ -322,88 +336,26 @@ hr {
     flex-wrap: wrap;
     border: none;
     align-items: center;
-    width: 240px;
 }
 
-.cpp {
-    background-image: url('../images/Cpp.png');
-    background-size: cover;
-    width: 40px;
-    height: 45px;
+.figma {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:  10px;
 }
 
-.csharp {
-    background-image: url('../images/CSharp.png');
-    background-size: cover;
-    width: 40px;
-    height: 45px;
+.figma p {
+    margin-left: 7px;
 }
 
-.c {
-    background-image: url('../images/C.png');
-    background-size: cover;
-    width: 40px;
-    height: 45px;
-}
-
-.java {
-    background-image: url('../images/Java.png');
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-}
-
-.html {
-    background-image: url('../images/HTML.png');
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-}
-
-.css {
-    background-image: url('../images/CSS.png');
-    background-size: cover;
-    width: 28px;
-    height: 40px;
-}
-
-.assembly {
-    background-image: url('../images/Assembly.png');
-    background-size: cover;
-    background-color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+.asprite {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
 }
 
 /*Contact*/
-
-.contacts1 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-}
-
-.github {
-    background-image: url('../images/Github.png');
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-}
-
-.linkedin {
-    background-image: url('../images/LinkedIn.png');
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-}
-
-.mail {
-    background-image: url('../images/Gmail.png');
-    background-size: cover;
-    width: 54px;
-    height: 40px;
-}
 
 .copyright {
     color: #ffffff7c;

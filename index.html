@@ -10,7 +10,6 @@
         <link rel = "stylesheet" href="css/style.css">
         <link rel = "icon" href = "favicon.svg">
         <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'>
     </head>
 
     <body>
@@ -19,8 +18,8 @@
         </div>
         <div class = "color">
         </div>
-        <div class = "start" id = "home">
-            <div class = "header">
+        <div class = "start">
+            <div class = "header" id = "home">
                 <h3>VANCOUVER, BC</h3>
                 <p>ocherdenekhurelsukh@gmail.com</p>
             </div>
@@ -29,7 +28,7 @@
                 <p class = "school">UBC COMPUTER SCIENCE</p>
             </div>
             <div class = "menu">
-                <div class = "ABOUT">
+                <div class = "ABOUTS">
                     <a href = "#about">ABOUT</a>
                 </div>
                 <div class = "PROJECTS">
@@ -43,28 +42,22 @@
                 </div>
             </div>
         </div>
-        <h1 class = "about-title">ABOUT ME</h1>
+        <h1 class = "about-title">About Me</h1>
         <hr id = "about">
-        <div class = "about1">
-            <p> Still figuring it out, <br> 
-                but the code works.</p>
-            <div class = "subabout">
-                <div class = "picture">
-                </div>
-                <p> <span class = "unimportant"> Originally from </span> Mongolia.<br> 
-                        2nd year CS @ UBC Vancouver, <span class = "unimportant"><br>
-                        Not settled on a specialty yet</span> - <br>
-                        drawn to AI/ML and System Engineering</p>
-            </div>
-            <div class = "hobby">
-                <p>Focused on optimizing <br> 
-                    and writing reusable <br> codes.</p>
-                <div class = "hobbies">
-                    <p><span class = "unimportant">I also love</span></p>
-                    <div class = "hobby-pill">
-                        <span id = "hobby-text">VOLLEYBALL</span>
-                    </div>
-                </div>
+        <div class = "about">
+            <div class = "picture"></div>
+            <div class = "descriptions">
+                <h3>
+                    Still figuring it out, <em> but the code <br> 
+                    works. </em>
+                </h3>
+                <div class = "row"><div class= "q">Origin</div><div class = "a">Mongolia</div></div>
+                <div class = "row"><div class= "q">Studying</div><div class = "a">Computer Science, UBC</div></div>
+                <div class = "row"><div class= "q">Currently</div><div class = "a">2nd year, Vancouver</div></div>
+                <div class = "row"><div class= "q">Drawn to</div><div class = "a">AI/ML & systems engineering</div></div>
+                <div class = "row"><div class= "q">Focused on</div><div class = "a">Optimizing & reusable code</div></div>
+                
+                <div class="hobby">I also love - <span class = "hobbies" id = "hobbyText"> volleyball </span></div>
             </div>
         </div>
         <h1 id = "projects">PROJECTS</h1>
@@ -101,9 +94,11 @@
             <div class = "design">
                 <h2>DESIGN</h2>
                 <div class = "figma">
+                    <div class="figmaico"></div>
                     <p>Figma</p>
                 </div>
                 <div class = "asprite">
+                    <div class="aspriteico"></div>
                     <p>Asprite</p>
                 </div>
             </div>
@@ -144,10 +139,27 @@
         </div>
         <hr>
         <div class = "contacts1" id = "contacts">
-            <div class = "github"></div>
-            <div class = "linkedin"></div>
-            <div class = "mail"></div>
+            <a class = "github" href="https://github.com/OchErdene"></a>
+            <a class = "linkedin" href = "https://www.linkedin.com/in/och-erdene/"></a>
+            <a class = "mail" href="mailto:ocherdenekhurelsukh@gmail.com"></a>
         </div>
         <p class="copyright">© 2026, Och-Erdene Khurelsukh</p>
+
+        <script>
+            const hobbies = ["volleyball", "coding", "music", "cooking", "drawing", "baking"];
+            let hobbyIndex = 0;
+            const hobbyEl = document.getElementById('hobbyText');
+
+            function cycleHobby() {
+                hobbyEl.classList.add('swap');
+                setTimeout (() => {
+                    hobbyIndex = (hobbyIndex + 1) % hobbies.length;
+                    hobbyEl.textContent = hobbies[hobbyIndex];
+                    hobbyEl.classList.remove('swap');
+                }, 300);
+            }
+
+            setInterval(cycleHobby, 2400);
+        </script>
     </body>
 </html>
